@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>entrainement01</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <h1>ENTRAINEMENT 01</h1>
+        <h4>Cette exercice sert aussi de rappel. Au besoin, je peux le consulter.</h4>
+  
+        <p>Bonjour et bienvenue sur mon site !</p>
+        <p>En dessous, zone de teste et de modification des différentes balises utilisées dans le tutoriel. <br />
+            Les différentes formes affichées ci-dessous utilise différente balise pour leurs donner différentes importances. <br/>
+            <em>Voici un mot</em>, <strong>Voici un mot</strong>, <mark>Voici un mot</mark>
+        </p>
+
+        <p>
+            <h2>Mini-sommaire</h2>
+            <a href="#titre01">LES LISTES</a><br/>
+            <a href="#titre02">METTRE UNE IMAGE</a><br/>
+            <a href="#titre03">L'ANCRE</a><br/>
+            <a href="#titre04">FIGURE</a><br/>
+        </p>
+
+
+        <p>
+            Exemple de lien vers un site internet. <br/>            
+            <a href="https://www.wilmann-off.com">WILMANN EN OFF</a>
+        </p>
+        
+
+        <p>
+            <h2 id="titre01">Les listes</h2>
+            Cette partie donne l'exemple d'ajout de différente listes. <br/>
+            Voici les listes les plus utilisé : <br/>
+            <h3>Les puces</h3>
+                <ul>
+                    <li>ceci est un mot</li>
+                    <li>ceci est un autre mot</li>
+                    <li>ceci est un autre-autre mot</li>
+                </ul>
+
+            <h3>Les numéroté</h3>
+                <ol>
+                    <li>ceci est un mot</li>
+                    <li>ceci est un autre mot</li>
+                    <li>ceci est un autre-autre mot</li>
+                </ol>
+        </p>
+
+        <p>
+            <h2 id="titre02">Mettre une image</h2>
+                Cette partie donne l'exemple d'ajout d'une image sur la page web.<br />
+                Il y a bien sûr l'image, mais en plus de cela, il est important d'y ajouter l'attribut "alt" qui définit ce qu'est l'image pour les moteur
+                de recherche, ou pour les personnes mal voyant ou aveugle. <br />
+                Au delà de ça, il y à l'attribut "title" qui permet d'ajouter une infobulle lorsqu'on passe la souris sur l'image.
+                <img src="images/kratos.jpg" alt="Photo de kratos" title="Que voilà une belle barbe de Spartiate !" />
+        </p>
+
+
+        <p>
+            <h2 id="titre03">L'ancre</h2>
+            L'ancre fonctionne avec l'attribut "id". <br/>
+            L'ancre permet entre autre d'aller rapidement à une information en utilisant la balise href via le symbole dièse (#).<br/>
+            L'application de ce code est retrouvable au début de la page sous la forme du mini-sommaire.
+        </p>
+
+
+
+        <p>
+            <h2 id="titre04">Figure</h2>
+            Cette partie donne l'exemple d'ajout d'une figure. <br />
+            La figure permet de mettre : images, codes sources, 
+            citations, etc.
+        </p>
+        <figure>
+                <img src="images/blocnotes.png" alt="Bloc-Notes" />
+                <figcaption>Le logiciel Bloc-Notes</figcaption>
+            </figure>
+
+
+    </body>
+
+    <!--
+        <p> </p> : pour organisier son texte en paragraphes.
+        <br /> : pour aller à la ligne.
+
+        <h1> </h1> jusqu'a <h6> </h6> : se sont les titres
+
+        <em> : mettre en italique.
+        <strong> : gras (mot important).
+        <mark> : surligner.
+        <ul> </ul> : crée une liste sans notion d'ordre.
+        <ol> </ol> : crée une liste avec notion d'ordre.
+        <li> </li> : mettre des puces ou numérotation.
+
+        <a> : indique un lien internet, utilisé avec l'attribut "href"
+            il indique le liens vers la page.
+
+        Pour crée un lien vers une page dans le même dossier :
+            <a href="nomdufichier.html">
+        Pour crée un lien vers une page dans un autre dossier :
+            <a href="nomdudossier/nomdufichier.html">
+             
+        id : permet de crée des ancre.
+                <h2 id="mon_ancre">Titre</h2>
+            Ensuite pour aller jusqu'a l'ancre il suffit d'utiliser href
+            avec un dièse (#) suivi du nom de l'ancre.
+                <a href="#mon_ancre">Aller vers l'ancre</a>
+
+            Il est possible de crée un lien qui mène vers un autre page
+            et un ancre.
+                <a href="nomduficher.html#nomdelancre">
+
+        <img /> : permet d'afficher une image.
+                    Elle doit être accompagner de :
+        "src" qui indique où se trouve l'image que l'on veut insérer.
+        Chemin absolue : http://www.site.com/fleur.png
+        Chemin relatif : src="image/fleur.png"
+        "alt" signifie texte alternatif, toujours ajouter a une image
+        un texte alernatif au cas ou l'image ne se charge pas.
+        alt="Une fleur"
+        Toujours mettre une image dans un paragraphe.
+
+        Possibilité d'ajouter une infobulle. Il suffit d'ajouter
+        l'attribut "title".
+
+        Pour affiché une miniature et faire de celui un lien clicable
+        vers l'image en grand. Utiliser un site comme Resizelmage.net
+        pour avoir deux version de l'image.
+        Voici un exemple de code que je vais pas mettre plus haut :
+
+            <p>
+                Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br />
+                <a href="img/montagne.jpg"><img src="img/montagne_mini.jpg" alt="Photo de montagne" title="Cliquez pour agrandir" /></a>
+            </p>
+
+        
+        <figure> : permet de mettre des figures (images, codes sources, 
+                    citations, etc).
+        
+        <figcaption> : permet d'ajouter une légende à la figure.
+
+        
+    -->
+
+    <!--
+        NOTE :
+        Si vous faites un lien vers un site qui comporte une adresse 
+        un peu bizarre avec des &, comme :
+        http://www.site.com/?data=15&name=mateo21, 
+        vous devrez remplacer tous les « & » par « &amp; » dans 
+        votre lien comme ceci :
+        http://www.site.com/?data=15&amp;name=mateo21.
+        Vous ne verrez pas la différence, mais cela est nécessaire
+        pour avoir une page web correctement construite en HTML5.
+    -->
+
+    <!--
+        NOTE :
+        L'attribut "id" sert à donner un nom « unique » à une balise,
+        pour s'en servir de repère.
+    -->
